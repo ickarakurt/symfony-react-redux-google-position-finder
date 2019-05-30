@@ -1,0 +1,21 @@
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.p-20{
+  padding : 20px !important;
+}
+body{
+  background: white;  /* fallback for old browsers */
+
+}
+
+.visteria{
+  background: #CB356B;  /* fallback for old browsers */
+
+}
+
+.visteria:hover {
+  background: rgb(131, 13, 56);  /* fallback for old browsers */
+
+}

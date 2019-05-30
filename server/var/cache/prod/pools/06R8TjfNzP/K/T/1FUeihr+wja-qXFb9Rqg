@@ -1,0 +1,130 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\User',
+                ],
+                'namespace' => [
+                    'App\\Entity',
+                ],
+                'rootEntityName' => [
+                    'App\\Entity\\User',
+                ],
+                'customRepositoryClassName' => [
+                    'App\\Repository\\UserRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'id' => true,
+                            'columnName' => 'id',
+                        ],
+                        'username' => [
+                            'fieldName' => 'username',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 180,
+                            'unique' => true,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'username',
+                        ],
+                        'email' => [
+                            'fieldName' => 'email',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 180,
+                            'unique' => true,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'email',
+                        ],
+                        'roles' => [
+                            'fieldName' => 'roles',
+                            'type' => 'simple_array',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'roles',
+                        ],
+                        'password' => [
+                            'fieldName' => 'password',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'password',
+                        ],
+                        'createdAt' => [
+                            'fieldName' => 'createdAt',
+                            'type' => 'datetime',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'created_at',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'username' => 'username',
+                        'email' => 'email',
+                        'roles' => 'roles',
+                        'password' => 'password',
+                        'created_at' => 'createdAt',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'username' => 'username',
+                        'email' => 'email',
+                        'roles' => 'roles',
+                        'password' => 'password',
+                        'createdAt' => 'created_at',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'user',
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+}];
